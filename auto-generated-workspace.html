@@ -1362,21 +1362,21 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                 
             // XYZ  com-chilipeppr-xyz
             chilipeppr.load(
-              "#com-chilipeppr-xyz",
-              "http://raw.githubusercontent.com/chilipeppr/workspace-tinyg/master/auto-generated-workspace.html",
-              function() {
-                // Callback after workspace loaded into #pnlWorkspace
-                // Now use require.js to get reference to instantiated workspace
-                cprequire(
-                  ["inline:com-chilipeppr-workspace-tinyg"], // the id you gave your workspace
-                  function(myWorkspaceTinyg) {
-                    // Callback that is passed reference to the newly loaded workspace
-                    console.log("Workspace / TinyG just got loaded.", myWorkspaceTinyg);
-                    myWorkspaceTinyg.init();
+                  "#com-chilipeppr-xyz",
+                  "http://raw.githubusercontent.com/agamenmon/workspace-tinygG2/master/auto-generated-workspace.html",
+                  function() {
+                    // Callback after workspace loaded into #pnlWorkspace
+                    // Now use require.js to get reference to instantiated workspace
+                    cprequire(
+                      ["inline:com-chilipeppr-workspace-tinyg"], // the id you gave your workspace
+                      function(myWorkspaceTinyg) {
+                        // Callback that is passed reference to the newly loaded workspace
+                        console.log("Workspace / TinyG just got loaded.", myWorkspaceTinyg);
+                        myWorkspaceTinyg.init();
+                      }
+                    );
                   }
                 );
-              }
-            );
             
             //End XYZ
             
@@ -1538,9 +1538,9 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                     </div>
                     <div class="col-xs-3 nopadding">
                         <!-- XYZ -->
-                        <div id="com-chilipeppr-xyz" class="">Load XYZ Here</div>
+                        <div id="com-chilipeppr-xyz" class="">Load XYZ-ABC Here</div>
                         <!-- Tinyg -->
-                        <div id="com-chilipeppr-tinyg" class="">Load TinyG Here</div>
+                        <div id="com-chilipeppr-tinyg" class="">Load TinyG G2 Here</div>
                         <!-- WebRTC Client -->
                         <div id="com-chilipeppr-webrtcclient" class="hidden">Load WebRTC Client Here</div>
                         <!-- Serial Port Selector -->

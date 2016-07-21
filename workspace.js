@@ -1148,21 +1148,21 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                 
             // XYZ  com-chilipeppr-xyz
             chilipeppr.load(
-              "#com-chilipeppr-xyz",
-              "http://raw.githubusercontent.com/chilipeppr/workspace-tinyg/master/auto-generated-workspace.html",
-              function() {
-                // Callback after workspace loaded into #pnlWorkspace
-                // Now use require.js to get reference to instantiated workspace
-                cprequire(
-                  ["inline:com-chilipeppr-workspace-tinyg"], // the id you gave your workspace
-                  function(myWorkspaceTinyg) {
-                    // Callback that is passed reference to the newly loaded workspace
-                    console.log("Workspace / TinyG just got loaded.", myWorkspaceTinyg);
-                    myWorkspaceTinyg.init();
+                  "#com-chilipeppr-xyz",
+                  "http://raw.githubusercontent.com/agamenmon/workspace-tinygG2/master/auto-generated-workspace.html",
+                  function() {
+                    // Callback after workspace loaded into #pnlWorkspace
+                    // Now use require.js to get reference to instantiated workspace
+                    cprequire(
+                      ["inline:com-chilipeppr-workspace-tinyg"], // the id you gave your workspace
+                      function(myWorkspaceTinyg) {
+                        // Callback that is passed reference to the newly loaded workspace
+                        console.log("Workspace / TinyG just got loaded.", myWorkspaceTinyg);
+                        myWorkspaceTinyg.init();
+                      }
+                    );
                   }
                 );
-              }
-            );
             
             //End XYZ
             
