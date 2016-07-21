@@ -1362,21 +1362,23 @@ cpdefine("inline:com-chilipeppr-workspace-tinyg", ["chilipeppr_ready"], function
                 
             // XYZ  com-chilipeppr-xyz
             chilipeppr.load(
-                  "#com-chilipeppr-xyz",
-                  "http://raw.githubusercontent.com/agamenmon/workspace-tinygG2/master/auto-generated-workspace.html",
-                  function() {
-                    // Callback after workspace loaded into #pnlWorkspace
-                    // Now use require.js to get reference to instantiated workspace
+                "com-chilipeppr-xyz",
+                // Lauer's new widget 8/16/15
+                "http://raw.githubusercontent.com/agamenmon/widget-axes/master/auto-generated-widget.html", 
+                // Temporary widget from Danal
+                //"http://fiddle.jshell.net/Danal/vktco1y6/show/light/", 
+                // Lauer's original core widget
+                //"http://fiddle.jshell.net/chilipeppr/gh45j/show/light/",
+        
+                function () {
                     cprequire(
-                      ["inline:com-chilipeppr-workspace-tinyg"], // the id you gave your workspace
-                      function(myWorkspaceTinyg) {
-                        // Callback that is passed reference to the newly loaded workspace
-                        console.log("Workspace / TinyG just got loaded.", myWorkspaceTinyg);
-                        myWorkspaceTinyg.init();
-                      }
-                    );
-                  }
-                );
+                    ["inline:com-chilipeppr-widget-xyz"],
+            
+                    function (xyz) {
+                        xyz.init();
+                    });
+                }
+            );
             
             //End XYZ
             
